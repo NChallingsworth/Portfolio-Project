@@ -1,3 +1,7 @@
+/*Nick Challingsworth
+ * challingsworth.1
+ * due 10/3/24 @ 4:10
+ */
 
 //I was going to use the util version of map and HashMap because it is what I got used to using in highschool, please let me know if I should change it
 import java.util.HashMap;
@@ -5,11 +9,11 @@ import java.util.Map;
 
 public class HockeyStatTracker {
 
-    // Maps to store player stats and team goals
+    // Maps to stre player stats and team goals
     private Map<String, PlayerStats> playerStats;
     private Map<String, Integer> teamGoals;
 
-    // Constructor to initialize maps
+    // Construct
     public HockeyStatTracker() {
         this.playerStats = new HashMap<>();
         this.teamGoals = new HashMap<>();
@@ -25,7 +29,6 @@ public class HockeyStatTracker {
         stats.penalties += penalties;
         this.playerStats.put(player, stats);
 
-        // Assume a player is part of a team. Here we simply assign goals to "Team A" for simplicity.
         this.teamGoals.put("Team A",
                 this.teamGoals.getOrDefault("Team A", 0) + goals);
     }
@@ -67,23 +70,23 @@ public class HockeyStatTracker {
                 + " goals this season.";
     }
 
-    // Main method to test functionality
+    // Main method for testing and POC
     public static void main(String[] args) {
         HockeyStatTracker tracker = new HockeyStatTracker();
 
-        // Add some player stats
+        //p stats
         tracker.addPlayerStats("Player 1", 2, 1, 0);
         tracker.addPlayerStats("Player 2", 1, 2, 1);
         tracker.addGoalieStats("Goalie 1", 25, 30);
 
-        // Display team goals
+        //team goals
         System.out.println(tracker.generateTeamSummary("Team A"));
 
-        // Display player rankings
+        //p ranks
         System.out.println("Player Rankings:");
         System.out.println(tracker.generatePlayerRanking());
 
-        // Display goalie save percentage
+        //goalie %
         System.out.println("Goalie 1 Save Percentage: "
                 + tracker.calculateSavePercentage("Goalie 1") + "%");
     }
