@@ -81,4 +81,17 @@ the following form: YYYY.0M.0D.
 
 - Updated 02-component-proof-of-concept to remove all of the todos and finished all questions
 
+
+## [2024.10.17]
+
+### Added
+
+- Designed kernel and enhanced interfaces for HockeyStatTracker component
+-Added HockeyStatTrackerKernel implementation
+-Added HockeyStatTracker implementation
+-Added components.jar to lib folder
+
+### Updated
+
+- Changed design to include HockeyStatTrackerKernel, HockeyStatTracker, and components.jar.
 ```
