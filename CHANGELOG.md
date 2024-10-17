@@ -70,3 +70,15 @@ the following form: YYYY.0M.0D.
 [unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...HEAD
 [2024.08.07]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...v2024.08.07
 [2024.01.07]: https://github.com/jrg94/portfolio-project/releases/tag/v2024.01.07
+
+## [2024.10.03]
+
+### Added
+
+- Designed a proof of concept for the HockeyStatTracker component.
+
+### Updated
+
+- Updated 02-component-proof-of-concept to remove all of the todos and finished all questions
+
+```
