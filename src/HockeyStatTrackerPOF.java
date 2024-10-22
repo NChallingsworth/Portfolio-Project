@@ -7,14 +7,14 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class HockeyStatTracker {
+public class HockeyStatTrackerPOF {
 
     // Maps to stre player stats and team goals
     private Map<String, PlayerStats> playerStats;
     private Map<String, Integer> teamGoals;
 
     // Construct
-    public HockeyStatTracker() {
+    public HockeyStatTrackerPOF() {
         this.playerStats = new HashMap<>();
         this.teamGoals = new HashMap<>();
     }
@@ -72,7 +72,7 @@ public class HockeyStatTracker {
 
     // Main method for testing and POC
     public static void main(String[] args) {
-        HockeyStatTracker tracker = new HockeyStatTracker();
+        HockeyStatTrackerPOF tracker = new HockeyStatTrackerPOF();
 
         //p stats
         tracker.addPlayerStats("Player 1", 2, 1, 0);
