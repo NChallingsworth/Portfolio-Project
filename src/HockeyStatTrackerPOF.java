@@ -7,14 +7,14 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class HockeyStatTracker {
+public class HockeyStatTrackerPOF {
 
     // Maps to stre player stats and team goals
     private Map<String, PlayerStats> playerStats;
     private Map<String, Integer> teamGoals;
 
     // Construct
-    public HockeyStatTracker() {
+    public HockeyStatTrackerPOF() {
         this.playerStats = new HashMap<>();
         this.teamGoals = new HashMap<>();
     }
@@ -68,27 +68,6 @@ public class HockeyStatTracker {
     public String generateTeamSummary(String team) {
         return "Team " + team + " has scored " + this.getTeamGoals(team)
                 + " goals this season.";
-    }
-
-    // Main method for testing and POC
-    public static void main(String[] args) {
-        HockeyStatTracker tracker = new HockeyStatTracker();
-
-        //p stats
-        tracker.addPlayerStats("Player 1", 2, 1, 0);
-        tracker.addPlayerStats("Player 2", 1, 2, 1);
-        tracker.addGoalieStats("Goalie 1", 25, 30);
-
-        //team goals
-        System.out.println(tracker.generateTeamSummary("Team A"));
-
-        //p ranks
-        System.out.println("Player Rankings:");
-        System.out.println(tracker.generatePlayerRanking());
-
-        //goalie %
-        System.out.println("Goalie 1 Save Percentage: "
-                + tracker.calculateSavePercentage("Goalie 1") + "%");
     }
 
     // Inner class to store player stats for testing
