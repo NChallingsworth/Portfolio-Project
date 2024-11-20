@@ -1,10 +1,7 @@
 //Nick Challingsworth
 //Challingsworth.1
 
-import components.standard.Standard;
-
-public interface HockeyStatTrackerKernel
-        extends Standard<HockeyStatTrackerPOF> {
+public interface HockeyStatTrackerKernel {
 
     /**
      * Adds player stats including goals, assists, and penalties.
