@@ -105,5 +105,16 @@ the following form: YYYY.0M.0D.
 ### Updated
 
 - Changed design to include HockeyStatTrackerKernel, HockeyStatTracker
-```
 
+
+## [2024.11.20]
+
+### Added
+
+- Finished HockeyStatTracker1L
+
+### Updated
+
+- Changed design to stop the POF from interfering with the other files (dont know why that was there in the first place)
+- minor changes to other files.
+```
