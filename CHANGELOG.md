@@ -117,4 +117,18 @@ the following form: YYYY.0M.0D.
 
 - Changed design to stop the POF from interfering with the other files (dont know why that was there in the first place)
 - minor changes to other files.
+
+
+##[2024.12.4]
+
+### Added
+
+- Designed test suite for HockeyStatTrackerKernel component
+- Designed two different use cases for HockeyStatTracker1L component
+
+### Updated
+
+- Added java doc comments to all files for ease of reading.
+- Fixed minor code issues in the 1L file.
+- Moved all component files into the HockeyStatTracker Package
 ```
