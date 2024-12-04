@@ -1,6 +1,18 @@
+package components.HockeyStatTracker;
 //Nick Challingsworth
+
 //Challingsworth.1
 
+/**
+ * Represents a tracker for hockey statistics, including player and team
+ * performance data.
+ *
+ * <p>
+ * This interface extends {@code HockeyStatTrackerKernel} and provides
+ * additional functionalities such as ranking players and calculating goalie
+ * statistics.
+ * </p>
+ */
 public interface HockeyStatTracker extends HockeyStatTrackerKernel {
 
     /**

@@ -1,11 +1,26 @@
+package components.HockeyStatTracker;
+
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Concrete implementation of {@code HockeyStatTrackerSecondary}. Maintains
+ * player and team statistics using maps.
+ */
 public class HockeyStatTracker1L extends HockeyStatTrackerSecondary {
 
+    /**
+     * just a var.
+     */
     private final Map<String, PlayerStats> playerStats;
+    /**
+     * just a var.
+     */
     private final Map<String, Integer> teamGoals;
 
+    /**
+     * Constructs an empty HockeyStatTracker1L.
+     */
     public HockeyStatTracker1L() {
         this.playerStats = new HashMap<>();
         this.teamGoals = new HashMap<>();

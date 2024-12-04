@@ -1,6 +1,12 @@
+package components.HockeyStatTracker;
 // Nick Challingsworth
+
 // challingsworth.1
 
+/**
+ * Abstract class that implements {@code HockeyStatTracker}. Provides default
+ * implementations for derived methods using kernel methods.
+ */
 public abstract class HockeyStatTrackerSecondary implements HockeyStatTracker {
 
     /**
@@ -89,16 +95,56 @@ public abstract class HockeyStatTrackerSecondary implements HockeyStatTracker {
 
     // Abstract kernel methods to be implemented by concrete subclass
 
+    /**
+     * Returns all players currently tracked.
+     *
+     * @return an iterable collection of player names
+     */
     protected abstract Iterable<String> getAllPlayers();
 
+    /**
+     * Gets the number of goals for the specified player.
+     *
+     * @param player
+     *            the name of the player
+     * @return the number of goals scored
+     */
     protected abstract int getGoals(String player);
 
+    /**
+     * Gets the number of assists for the specified player.
+     *
+     * @param player
+     *            the name of the player
+     * @return the number of assists made
+     */
     protected abstract int getAssists(String player);
 
+    /**
+     * Gets the number of penalties for the specified player.
+     *
+     * @param player
+     *            the name of the player
+     * @return the number of penalties recieved
+     */
     protected abstract int getPenalties(String player);
 
+    /**
+     * Gets the number of saves for the specified goalie.
+     *
+     * @param player
+     *            the name of the goalie
+     * @return the number of saves made
+     */
     protected abstract int getSaves(String player);
 
+    /**
+     * Gets the number of shots against for the specified goalie.
+     *
+     * @param player
+     *            the name of the goalie
+     * @return the number of shots faced
+     */
     protected abstract int getShotsAgainst(String player);
 
 }

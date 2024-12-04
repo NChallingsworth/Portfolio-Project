@@ -1,6 +1,12 @@
+package components.HockeyStatTracker;
 //Nick Challingsworth
+
 //Challingsworth.1
 
+/**
+ * Kernel interface for the HockeyStatTracker. Provides basic methods to add and
+ * retrieve player and team statistics.
+ */
 public interface HockeyStatTrackerKernel {
 
     /**
